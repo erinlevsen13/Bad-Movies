@@ -3,9 +3,6 @@ var bodyParser = require("body-parser");
 var request = require("request");
 var app = express();
 
-// Sign up and get your moviedb API key here:
-// https://www.themoviedb.org/account/signup
-
 //Helpers
 var apiHelpers = require("./helpers/apiHelpers.js");
 
@@ -61,11 +58,11 @@ app.post("/delete", function(req, res) {
 
 //IF you decide to go with this OPTION 2, delete OPTION 1 to continue
 
-//Routes
-const movieRoutes = require("./routes/movieRoutes.js");
+// //Routes
+// const movieRoutes = require("./routes/movieRoutes.js");
 
-//Use routes
-app.use("/movies", movieRoutes);
+// //Use routes
+// app.use("/movies", movieRoutes);
 
 app.listen(3000, function() {
   console.log("listening on port 3000!");
